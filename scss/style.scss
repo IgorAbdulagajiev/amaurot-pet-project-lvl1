@@ -1,0 +1,197 @@
+// === imports ===
+@import 'normalize.scss';
+// === / imports ===
+
+// === mixins ===
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+// === / mixins ===
+
+// === variables ===
+$color-grey: #eeeeee;
+$text-color: #283136;
+// === / variables ===
+
+// === common ===
+* {
+    box-sizing: border-box;
+    color: #000000;
+}
+
+body {
+    @include font-roboto;
+}
+
+.section-inner {
+    width: 1160px;
+    margin: 0 auto;
+}
+// === / common ===
+
+// === header ===
+.section-header {
+    background-color: $color-grey;
+
+    .section-inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        li {
+            & + li {
+                margin-left: 45px;
+            }
+            a {
+                font-size: 16px;
+                line-height: 30px;
+                font-weight: 500;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+
+    &__basket {
+        display: flex;
+
+        &-icon + &-text {
+            margin-left: 30px;
+        }
+    }
+}
+// === / header ===
+
+// === slider ===
+.section-slider {
+    background-color: $color-grey;
+
+    .section-inner {
+        display: flex;
+    }
+
+    &__content {
+        align-self: center;
+        padding-right: 55px;
+
+        &-title {
+            font-size: 55px;
+            line-height: 55px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        &-subtitle {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color:$text-color;
+            margin-bottom: 45px;
+        }
+        &-button {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 500; 
+            text-transform: uppercase;
+
+            a {
+                background-color: #fb565a;
+                text-decoration: none;
+                padding: 20px 40px;
+                border-radius: 5px;
+                color: #ffffff;
+            }
+        }
+    }
+    &__img {
+        align-self: flex-end;
+    }
+}
+// ===  / slider ===
+
+// === advantages ===
+.section-advantages {
+    padding-top: 80px;
+
+    .section-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 300px;
+        text-align: left;
+
+        &-tiitle {
+            margin-top: 30px;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &-subtitle {
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $text-color;
+        }
+        &-button1 {
+            margin-top: 40px;
+            margin-bottom: 80px;
+            a {
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 20px 40px;
+                border-radius: 5px;
+                color: #ffffff;
+                background-color: #fb565a;
+            }
+        }
+        &-button2 {
+            margin-top: 40px;
+            margin-bottom: 80px;
+            a {
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 20px 40px;
+                border-radius: 5px;
+                color: #ffffff;
+                background-color: #00ca74;
+            }
+        }
+        &-button3 {
+            margin-top: 40px;
+            margin-bottom: 80px;
+            a {
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 20px 40px;
+                border-radius: 5px;
+                color: #ffffff;
+                background-color: #efc84a;
+            }
+        }
+    }
+}
+// === / advantages ===
+
+// === studio ===
+
+// === / studio ===
