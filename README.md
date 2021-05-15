@@ -1,1 +1,1 @@
-# nerds-nikolay-
+# amaurot-pet-project-lvl1
