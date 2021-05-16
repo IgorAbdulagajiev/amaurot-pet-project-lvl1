@@ -528,7 +528,8 @@ img {
 
 .footer-inner {
   display: flex;
-  margin-top: 70px; }
+  margin-top: 70px;
+  margin-bottom: 70px; }
 
 .footer__social {
   display: flex;
