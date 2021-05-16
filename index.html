@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,44 +12,49 @@
 <body>
 
     <!--  === header === -->
-    <header class="section-outer section-header">
-        <div class="section-inner">
-            <div class="section-headerc">
-                <img src="img/nerds-logo.png" alt="">
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header__logo">
+                <img src="./img/nerds-logo.png" alt="">
             </div>
-            <ul class="section-header__nav">
-                <li><a href="#">Студия</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            <div class="section-header__basket">
-                <div class="section-header__basket-icon">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-list-item"><a href="#" class="header__nav-list-link">Студия</a></li>
+                    <li class="header__nav-list-item"><a href="#" class="header__nav-list-link">Клиенты</a></li>
+                    <li class="header__nav-list-item"><a href="#" class="header__nav-list-link">Магазин</a></li>
+                    <li class="header__nav-list-item"><a href="#" class="header__nav-list-link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- хз как сделать через befor-->
+            <div class="header__basket">
+                <div class="header__basket-icon">
                     <img src="img/basket-icon.png" alt="">
                 </div>
-                <div class="section-header__basket-text">
+                <div class="header__basket-text">
                     Корзина
                 </div>
             </div>
+            <!-- / хз как сделать через befor-->
         </div>
     </header>
     <!--  ===  / header === -->
 
     <!--  ===  / slider === -->
-    <section class="section-outer section-slider">
-        <div class="section-inner">
-            <div class="section-slider__content">
-                <div class="section-slider__content-title">
+    <section class="slider">
+        <div class="container slider-inner">
+            <div class="slider__content">
+                <div class="slider__content-title">
                     Долго, дорого, скрупулезно.
                 </div>
-                <div class="section-slider__content-subtitle">
+                <div class="slider__content-subtitle">
                     Математически выверенный дизайн для вашего сайта или мобильного приложения.
                 </div>
-                <div class="section-slider__content-button">
-                    <a href="#">Узнать больше</a>
+                <div class="slider__content-button">
+                    <a href="#" class="button button--red">Узнать больше</a>
                 </div>
             </div>
-            <div class="section-slider__img">
+            <div class="slider__img">
                 <img src="img/slide1.png" alt="">
             </div>
         </div>
@@ -57,36 +62,38 @@
     <!--  ===  / slider === -->
 
     <!--  === advantages === -->
-    <section class="section-outer section-advantages">
-        <div class="section-inner">
-            <div class="section-advantages__item">
-                <div class="section-advantages__item-img">
+    <section class="advantages">
+        <div class="container advantages-inner">
+            <div class="advantages__item">
+                <div class="advantages__item-img">
                     <img src="img/illustration-1.jpg.png" alt="">
                 </div>
-                <div class="section-advantages__item-tiitle">Веб-сайты</div>
-                <div class="section-advantages__item-subtitle">Мир никогда не будет прежним после того как увидит ваш сайт!</div>
-                <div class="section-advantages__item-button1">
-                    <a href="#">Заказать</a>
+                <div class="advantages__item-tiitle">Веб-сайты</div>
+                <div class="advantages__item-subtitle">Мир никогда не будет прежним после того как увидит ваш сайт!</div>
+                <div class="advantages__item-button">
+                    <a href="#" class="button button--red">Заказать</a>
                 </div>
             </div>
-            <div class="section-advantages__item">
-                <div class="section-advantages__item-img">
+
+            <div class="advantages__item">
+                <div class="advantages__item-img">
                     <img src="img/illustration-2.jpg.png" alt="">
                 </div>
-                <div class="section-advantages__item-tiitle">Приложения</div>
-                <div class="section-advantages__item-subtitle">Покорите топ-10 приложений в AppStore и GooglePlay</div>
-                <div class="section-advantages__item-button2">
-                    <a href="#">Заказать</a>
+                <div class="advantages__item-tiitle">Приложения</div>
+                <div class="advantages__item-subtitle">Покорите топ-10 приложений в AppStore и GooglePlay</div>
+                <div class="advantages__item-button">
+                    <a href="#" class="button button--green">Заказать</a>
                 </div>
             </div>
-            <div class="section-advantages__item">
-                <div class="section-advantages__item-img">
+
+            <div class="advantages__item">
+                <div class="advantages__item-img">
                     <img src="img/illustration-3.jpg.png" alt="">
                 </div>
-                <div class="section-advantages__item-tiitle">Презентации</div>
-                <div class="section-advantages__item-subtitle">Вы даже не подозреваете, насколько вы изумительны!</div>
-                <div class="section-advantages__item-button3">
-                    <a href="#">Заказать</a>
+                <div class="advantages__item-tiitle">Презентации</div>
+                <div class="advantages__item-subtitle">Вы даже не подозреваете, насколько вы изумительны!</div>
+                <div class="advantages__item-button">
+                    <a href="#" class="button button--yellow">Заказать</a>
                 </div>
             </div>
         </div>
@@ -94,44 +101,117 @@
     <!--  === advantages === -->
 
     <!--  === studio === -->
-    <section class="section-outer section-studio">
-        <div class="section-inner">
-            <div class="section-studio-wrapper1">
-                <div class="section-studio-wrapper1-promo">
-                    <div class="section-studio-wrapper1-promo__title">Мы &mdash; малелькая, но гордая дизайн-студия из Краснодара.</div>
-                    <div class="section-studio-wrapper1-promo__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</div>
-                    <div class="section-studio-wrapper1-promo__subtitle">Выполняем заказы на разработку:</div>
-                    <ul class="section-studio-wrapper1-promo__list">
-                        <li>Веб-сайтов любой сложности</li>
-                        <li>Мобильный приложений для iOS и Android</li>
-                        <li>Слайдшоу и видео для корпоративных  презентаций</li>
-                    </ul>
+    <section class="studio">
+        <div class="container studio-inner">
+            <div class="studio__promo">
+                <div class="studio__promo-title">
+                    Мы &mdash; малелькая, но гордая дизайн-студия из Краснодара.
                 </div>
-                <div class="section-studio-wrapper1-stat">
-                    <div class="section-studio-wrapper1-stat__img">
-                        <img src="img/nerds-illustration.jpg" alt="">
+                <div class="studio__promo-text">
+                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+                </div>
+                <div class="studio__promo-subtitle">
+                    Выполняем заказы на разработку:
+                </div>
+                <ul class="studio__promo-list">
+                    <li class="studio__promo-list-item"><span class="mdash--red">&mdash;</span> Веб-сайтов любой сложности</li>
+                    <li class="studio__promo-list-item"><span class="mdash--red">&mdash;</span> Мобильный приложений для iOS и Android</li>
+                    <li class="studio__promo-list-item"><span class="mdash--red">&mdash;</span> Слайдшоу и видео для корпоративных  презентаций</li>
+                </ul>
+            </div>
+
+            <div class="studio__stat">
+                <div class="studio__stat-img">
+                    <img src="img/nerds-illustration.jpg" alt="">
+                </div>
+
+                <div class="studio__stat-title">
+                    С 2004 года любим точность во всем:
+                </div>
+
+                <div class="studio__stat-list">
+                    <div class="studio__stat-list-item">
+                        <div class="studio__stat-list-item-number">
+                            <span class="number">146<span class="percent">%</span></span>
+                        </div>
+                        <div class="studio__stat-list-item-text">Уровень самоотдачи</div>
                     </div>
-                    <div class="section-studio-wrapper1-stat__title">С 2004 года любим точность во всем:</div>
-                    <ul class="section-studio-wrapper1-stat__list">
-                        <li><span class="numder">146<span class="percent">%</span></span><br>Уровень самоотдачи</li>
-                        <li><span class="numder">100<span class="percent">%</span></span><br>Соблюдение сроков</li>
-                        <li><span class="numder">50<span class="percent">%</span></span><br>Минимальная предоплата</li>
-                    </ul>
+
+                    <div class="studio__stat-list-item">
+                        <div class="studio__stat-list-item-number">
+                            <span class="number">100<span class="percent">%</span></span>
+                        </div>
+                        <div class="studio__stat-list-item-text">Соблюдение сроков</div>
+                    </div>
+
+                    <div class="studio__stat-list-item">
+                        <div class="studio__stat-list-item-number">
+                            <span class="number">50<span class="percent">%</span></span>
+                        </div>
+                        <div class="studio__stat-list-item-text">Минимальная предоплата</div>
+                    </div>
                 </div>
             </div>
-            <div class="section-studio-wrapper2"></div>
         </div>
     </section>
     <!--  === / studio === -->
 
-    <section class="section-outer section-contacts">
-        <div class="section-inner">
-            contacts
+    <!-- === partners === -->
+    <section class="partners">
+        <div class="container partners-inner">
+            <img src="./img/partners-logo-1.png" alt="">
+            <img src="./img/div.png" alt="">
+            <img src="./img/partners-logo-2.png" alt="">
+            <img src="./img/div.png" alt="">
+            <img src="./img/partners-logo-3.png" alt="">
+            <img src="./img/div.png" alt="">
+            <img src="./img/partners-logo-4.png" alt="">
         </div>
     </section>
-    <footer class="section-outer section-footer">
-        <div class="section-inner">
-            footer
+    <!-- === / partners === -->
+
+    <!--  === contacts === -->
+    <section class="contacts">
+        <div class="container contacts-inner">
+            <div class="contacts__board">
+                <div class="contacts__board-title">NЁRDS design studio</div>
+                <div class="contacts__board-adress">191186, Санкт-Петербург, ул. Б. Конбшенная, д. 19/8</div>
+                <div class="contacts__board-telephone">тел. +7 (812) 275-75-75</div>
+                <div class="contacts__board-button">
+                    <a href="#" class="button button--red">Напишите нам</a>
+                </div>
+            </div>
+            <div class="contacts__map-marker">
+                <img src="./img/map-marker.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--  === contacts === -->
+
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer__social">
+                <!-- Нужно доделать-->
+                <div class="footer__social-vk">
+                    <img src="./img/vk-icon.png" alt="">
+                </div>
+                <div class="footer__social-fb">
+                    <img src="./img/fb-icon.png" alt="">
+                </div>
+                <div class="footer__social-inst">
+                    <img src="./img/inst-icon.png" alt="">
+                </div>
+                <!-- Нужно доделать-->
+            </div>
+            <div class="footer__promo">
+                <div class="footer__promo-title">
+                    Давайте дружить, это выгодно!
+                </div>
+                <div class="footer__promo-text">
+                    Скидка 10% для друзей из социальных сетей.
+                </div>
+            </div>
         </div>
     </footer>
 </body>
